@@ -1,0 +1,23 @@
+version: '3'
+
+networks:
+  default:
+    driver: bridge
+
+services:
+
+  mariadblutece:
+    container_name: mariadblutece
+    image: mariadb
+    ports:
+      - "3306:3306"
+    environment:
+     MYSQL_ROOT_PASSWORD: motdepasse
+
+  tomcat:
+    container_name: tomcat
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mariadblutece
