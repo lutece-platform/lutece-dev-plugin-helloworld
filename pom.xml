@@ -31,4 +31,10 @@
         </dependency>
     </dependencies>
 
+    <scm>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-dev-plugin-helloworld.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-dev-plugin-helloworld.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-dev-plugin-helloworld.git</url>
+    </scm>
+
 </project>
